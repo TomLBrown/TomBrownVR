@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7562905488870424732}
   - component: {fileID: 1396272053022059237}
   - component: {fileID: 2028345853169397622}
+  - component: {fileID: 9077382604009670907}
   m_Layer: 0
   m_Name: Glass Shard 2 1
   m_TagString: Untagged
@@ -98,7 +99,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4158401184639659926}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -181,8 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783750eec4c41da428b7651515146d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocityAverageFrames: 5
-  angularVelocityAverageFrames: 11
+  velocityAverageFrames: 13
+  angularVelocityAverageFrames: 19
   estimateOnAwake: 0
 --- !u!114 &2028345853169397622
 MonoBehaviour:
@@ -238,3 +239,24 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!65 &9077382604009670907
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4158401184639659926}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011195369, y: 0.0315357, z: 0.010783201}
+  m_Center: {x: -0.000073721865, y: -0.0042781676, z: 0.0063191205}
