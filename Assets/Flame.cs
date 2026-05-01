@@ -4,9 +4,12 @@ public class Flame : MonoBehaviour
 {
     [SerializeField] string tagFilter;
     public GameObject flameEffect;
+    public gameEndFire fireCheck;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        fireCheck = FindFirstObjectByType<gameEndFire>();
         flameEffect.SetActive(false);
     }
 
@@ -16,5 +19,6 @@ public class Flame : MonoBehaviour
         if (!string.IsNullOrEmpty(tagFilter) && !other.gameObject.CompareTag(tagFilter)) return;
 
         flameEffect.SetActive(true);
+        fireCheck.fireCounter ++;
     }
 }
