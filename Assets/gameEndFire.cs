@@ -4,13 +4,11 @@ public class gameEndFire : MonoBehaviour
 {
     public int endCounter = 6;
     public int fireCounter = 0;
-    public GameObject allFires;
     public AudioSource gameOver;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        allFires.SetActive(false);
         endCounter = 6;
         fireCounter = 0;
     }
@@ -20,7 +18,6 @@ public class gameEndFire : MonoBehaviour
     {
         if(fireCounter == endCounter)
         {
-            allFires.SetActive(true);
             gameOver.Play();
             Invoke("GameEnd", 10);
         }
